@@ -2,9 +2,10 @@
 
 import Image from "next/image";
 import React, { useContext, useState } from "react";
-import FormImage from "../../public/FormImage/formImage.jpeg";
-import Logo from "../../public/Logo/Logo.png";
-import Message from "../../public/FormImage/message.svg";
+// import FormImage from "../../public/FormImage/formImage.jpeg";
+import FormImage from "../../../public/FormImage/formImage.jpeg";
+import Logo from "../../../public/Logo/Logo.png";
+import Message from "../../../public/FormImage/message.svg";
 
 import { AuthContext } from "@/context/AuthContext";
 
@@ -14,10 +15,10 @@ import LoginForm from "@/components/LoginForm/LoginForm";
 import CreateAccountForm from "@/components/CreateAccountForm/CreateAccountForm";
 
 const page = () => {
-  const { devicedata } = useContext(AuthContext);
+  // const { devicedata } = useContext(AuthContext);
   const router = useRouter();
 
-  console.log(devicedata);
+  // console.log(devicedata);
   const [formData, setFormData] = useState({
     company_name: "",
     company_id: "",
@@ -75,6 +76,7 @@ const page = () => {
           </div>
           <div className=" p-5 max-w-lg ">
             <Tab items={items} />
+            {/* not to do and this is ok .. we are all ready to it ..  */}
           </div>
         </div>
       </div>

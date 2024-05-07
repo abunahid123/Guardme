@@ -4,7 +4,7 @@ const LoginForm = () => {
   return (
     <>
       <div className=" w-full h-auto flex flex-col my-5  ">
-        <form className=" flex flex-col font-customSndFont gap-2 ">
+        <form className=" flex flex-col font-customSndFont gap-2  ">
           <div className="">
             <label>
               <h1>Company ID</h1>
@@ -54,6 +54,8 @@ const LoginForm = () => {
               placeholder="Enter your Company Name"
               className=" w-[470px] rounded-xl px-4 py-2 outline-none "
             />
+            {/* all about new challange in new work.. 
+            abb new  */}
           </div>
           <div className="">
             <label>

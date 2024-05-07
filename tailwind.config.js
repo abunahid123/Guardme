@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         customFot: ["Libre Baskerville", "serif"],
         customSndFont: ["Tinos", "serif"],
+        customTherdFont: ["Oxygen", "sans-serif"],
       },
     },
   },
