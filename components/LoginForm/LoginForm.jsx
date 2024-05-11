@@ -1,6 +1,13 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const LoginForm = () => {
+  const router = useRouter();
+  const handleForm = () => {
+    router.push("/dashbord");
+  };
   return (
     <>
       <div className=" w-full h-auto flex flex-col my-5  ">
@@ -73,7 +80,10 @@ const LoginForm = () => {
               <h1>I am not a robot</h1>
             </div>
           </div>
-          <div className=" w-full h-auto bg-[#0A69C8] flex justify-center items-center text-white p-2 rounded-lg  ">
+          <div
+            onClick={handleForm}
+            className=" w-full h-auto bg-[#0A69C8] flex justify-center items-center text-white p-2 rounded-lg cursor-pointer  "
+          >
             <h1>Log In</h1>
           </div>
         </form>

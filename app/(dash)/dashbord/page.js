@@ -1,4 +1,6 @@
 import ThredButton from "@/components/cutombutton/ThredButton";
+import BarchartComponent from "@/components/herocomponentdashbord/BarchartComponent";
+import CalanderComponent from "@/components/herocomponentdashbord/CalanderComponent";
 import PichartComponent from "@/components/herocomponentdashbord/PichartComponent";
 import SidebarContent from "@/components/sidebar/SidebarContent";
 import UserTable from "@/components/usertable/UserTable";
@@ -14,7 +16,7 @@ const page = () => {
   return (
     <>
       <div className="  flex-grow  bg-[#F5F5F5] flex ">
-        <div className=" w-[15%] bg-[#1A2942] border-[#00B7FE] text-white font-customTherdFont py-3 gap-2 ">
+        <div className=" w-[15%] bg-[#0866FF] border-[#00B7FE] text-white font-customTherdFont py-3 gap-2 ">
           <SidebarContent title={"Company Name"} />
           <SidebarContent title={"New"} />
           <SidebarContent title={"Open File"} />
@@ -58,8 +60,10 @@ const page = () => {
             <ThredButton title={"High"} className={"bg-[#3BC0C3]"} />
             <ThredButton title={"Urgent"} className={"bg-[#F24F7C]"} />
           </div>
-          <div className=" flex w-full h-auto px-3 overflow-hidden mt-4 ">
+          <div className=" flex w-full h-auto px-3 justify-evenly overflow-hidden mt-10 ">
             <PichartComponent />
+            {/* <BarchartComponent /> */}
+            <CalanderComponent />
           </div>
         </div>
       </div>
